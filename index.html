@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CAPs - Gestão de Pessoas</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .bg-verde {
+            background-color: #198754;
+        }
+
+        .bg-laranja {
+            background-color: #fd7e14;
+        }
+
+        .text-verde {
+            color: #198754;
+        }
+
+        .btn-laranja {
+            background-color: #fd7e14;
+            color: white;
+        }
+
+        .btn-laranja:hover {
+            background-color: #e96b0c;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-verde fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">CAPs</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="menu" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#hero">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ceo">CEO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="vh-100 d-flex align-items-center text-center bg-light">
+    <div class="container" data-aos="fade-up">
+        <h1 class="display-4 text-verde">Gestão de Pessoas com Zero Estresse*</h1>
+        <p class="lead">*Resultados podem variar dependendo do nível de caos da empresa</p>
+        <a href="#sobre" class="btn btn-laranja mt-3">Saiba Mais</a>
+    </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+    <div class="container text-center" data-aos="fade-up">
+        <h2 class="text-verde">Sobre Nós</h2>
+        <p>
+            A CAPs nasceu de uma completa falta de organização, reuniões desnecessárias e decisões questionáveis.
+            Mesmo assim, conseguimos nos tornar especialistas em gestão de pessoas... ou pelo menos é o que dizemos.
+        </p>
+    </div>
+</section>
+
+<!-- CEO -->
+<section id="ceo" class="bg-light">
+    <div class="container" data-aos="fade-right">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="https://i.imgur.com/3GvwNBf.png" class="img-fluid rounded" alt="Michael Scott">
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-verde">Nosso CEO</h2>
+                <h4>Michael Scott</h4>
+                <p><i>"Eu não sou supersticioso, mas sou um pouco sticioso."</i></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EQUIPE -->
+<section id="equipe">
+    <div class="container text-center">
+        <h2 class="text-verde" data-aos="fade-up">Equipe de Vendas</h2>
+
+        <div class="row mt-4">
+
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Dwight Schrute</h5>
+                        <p>Assistente do Gerente Regional</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Jim Halpert</h5>
+                        <p>Especialista em Vendas e Pegadinhas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Pam Beesly</h5>
+                        <p>Recepcionista e Artista</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="bg-light">
+    <div class="container text-center" data-aos="fade-up">
+        <h2 class="text-verde">Contato</h2>
+
+        <p><i class="fas fa-phone"></i> (00) 1234-5678</p>
+        <p><i class="fas fa-map-marker-alt"></i> Scranton, Pennsylvania</p>
+
+        <iframe 
+            src="https://www.google.com/maps?q=Scranton&output=embed"
+            width="100%" height="300" style="border:0;">
+        </iframe>
+    </div>
+</section>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
