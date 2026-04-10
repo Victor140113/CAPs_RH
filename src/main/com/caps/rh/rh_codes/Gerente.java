@@ -10,6 +10,12 @@ public class Gerente extends Funcionario{
 		super(nome, cpf, salario);
 	}
 	
+	// Regra de Negócio
+
+	double calcularRemuneracaoTotal() {
+		return super.getSalario() + this.bonusAnual;
+	}
+	
 	// Getters e Setters
 	public double getBonusAnual() {
 		return bonusAnual;
@@ -18,4 +24,6 @@ public class Gerente extends Funcionario{
 	public void setBonusAnual(double bonusAnual) {
 		this.bonusAnual = bonusAnual;
 	}
+	
+	
 }
